@@ -1,0 +1,227 @@
+html
+{
+	height:100%;
+}
+
+body
+{
+	background-image:url(../images/bpm.jpg);
+	background-position:top center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:100%;
+}
+.scroll-wrapper
+{
+	height:100%;
+	width:100%;
+	overflow-y:scroll;
+}
+.page-wrapper
+{
+	height:100%;
+	width:90%;
+	margin:0% 5%;
+}
+
+.top-menu 
+{
+    font-size: 243%;
+    margin: 0;
+	box-shadow: 0 0 5px 3px #484848;
+}
+.site-name
+{
+	padding:0;
+}
+
+.links-menu
+{
+	margin: 3% 0% 0% 15%;
+}
+
+.content-wrapper
+{
+	position: relative;
+	width: 100%;
+	height:75%;
+	background-image: url('../images/ContentBackground.png');
+	background-size: 105% 105%;
+	background-position: -110% 0%;
+	margin: 2.5% 0 0 0;
+	padding: 0 1.35%;
+}
+
+.content-bg
+{
+	position: absolute;
+	width: 100%;
+	height:100%;
+}
+.stredming-container
+{
+	height: 98%;
+	padding: 1% 1% 0;
+}
+.stredming
+{
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 32%;
+	display: none;
+	margin-right: 5%;
+	border-radius: 8px;;
+}
+.stredming-header
+{
+	color: white;
+	margin:0;
+	padding:0;
+}
+.stredming-header h1
+{
+	margin: 0;
+	padding: .5% .5%;
+	font-size: 175%;
+	font-weight: 500;
+}
+.stredming-results
+{
+	height:87%;
+	margin:0;
+	padding:0;
+}
+.result
+{
+	height: 72%;
+	padding: 0%;
+}
+.stredm-logo
+{
+	height:98%;
+}
+.stredm-panel-container
+{
+	padding: 1% 0% 0% 0%;
+	height: 98%;
+	right: 1%;
+}
+
+.stredm-panel
+{
+	background-color: rgba(0,0,0,.9);
+	height: 100%;
+	border-radius: 11px;
+}
+.stredm-select-container
+{
+	height: 100%;
+}
+.select-container
+{
+}
+.event-select
+{
+	margin:0;
+	padding:5% 0%;
+}
+.artist-select
+{
+	margin:0;
+	padding:5% 0%;
+}
+.select-text
+{
+	color: white;
+	font-size: 2.2em;
+	font-family: test;
+	letter-spacing: 2px;
+	margin: -1.5% 0% 1% 0%;
+	padding: 0% 0% 0% 4%;
+}
+.select-form
+{
+	padding:0;
+}
+.instructions-container
+{
+	color: #FFFFFF;
+	line-height: 300%;
+	text-align: center;
+	font-size: 2.2em;
+	height:48%;
+}
+.button-container
+{
+	text-align:center;
+}
+@font-face 
+{
+	font-family:'test';
+	src:url('../fonts/test.otf');
+}
+.ui-autocomplete {
+	max-height: 200px;
+	max-width: 157px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+input[type=text]
+{
+	
+}
+
+@media only screen and (max-width: 768px) 
+{
+
+.content-wrapper
+{
+	background-position: -198% 65%;
+	background-size: 170% 80%;
+}
+.stredm-panel-container
+{
+	right:0%;
+	padding: 1% 1% 0;
+	font-size: 51.5%;
+}
+.top-menu
+{
+	font-size: 170%;
+	margin: 0;
+}
+.stredming-container
+{
+	display:none;
+	height:33%;
+}
+.stredm-logo
+{
+	display:none;
+}
+.stredming
+{
+	margin-right:0;
+	height:100%;
+}
+.stredming-results
+{
+	height:80%;
+}
+.result
+{
+	height:100%;
+}
+.links-menu 
+{
+	margin: 0;
+}
+
+}
+
+@media only screen and (max-width: 1200px) 
+{
+.stredm-panel-container
+{
+	font-size: 74%;
+}
+}
