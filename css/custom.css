@@ -16,13 +16,14 @@ body
 {
 	height:100%;
 	width:100%;
-	overflow-y:scroll;
+	overflow-y:hidden;
 }
 .page-wrapper
 {
 	height:100%;
 	width:100%;
 	margin:0% 0%;
+	padding:0;
 }
 .navbar 
 {
@@ -31,6 +32,50 @@ body
 	height: 10%;
 	margin: 0%;
 	box-shadow: 0px 1px 20px black;
+}
+.page-container
+{
+	height:100%;
+	width:100%;
+	margin:1% 0 0 0;
+	text-align:center;
+}
+.app-container
+{
+	height:100%;
+	width:60%;
+	margin:auto;
+}
+.select-buttons
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:5%;
+}
+.option-button
+{
+	height:50%;
+	margin:0;
+	padding:1%;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+.option-label
+{
+	margin:0;
+	padding:1%;
+}
+.label-header
+{
+	height:100%;
+	margin:0;
+	padding:10% 0%;
+}
+.label-icon
+{
+	height:100%;
+	margin:0;
+	padding:10% 0%;
 }
 .logo 
 {
