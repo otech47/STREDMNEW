@@ -75,6 +75,16 @@ $(document).ready( function() {
 	}).click(function() {
 		getAllTags();
 	});
+	$("#artists").autocomplete({
+		minLength: 0
+	}).click(function() {
+		getArtistTags();
+	});
+	$("#events").autocomplete({
+		minLength: 0
+	}).click(function() {
+		getEventTags();
+	});
 	$(".option-button").hover(function(){
 		$(this).css("box-shadow","0 0 2px 5px grey inset")
 		},
@@ -87,6 +97,7 @@ $(document).ready( function() {
 		$(".option-label").animate({opacity:'0'}, 200, function() {
 			$(".select-buttons").css("display","none");
 			$(".random-search").css("display","table");
+			$(".option-label").css("opacity","1");
 			});
 	});
 	$(".specific-button").click(function(){
@@ -94,6 +105,22 @@ $(document).ready( function() {
 		$(".option-label").animate({opacity:'0'}, 200, function() {
 			$(".select-buttons").css("display","none");
 			$(".specific-search").css("display","table");
+			$(".option-label").css("opacity","1");
 			});
+	});
+	$(".random-back-button").click(function(){
+		$(".random-search").animate({opacity:'0'}, 200, function() {
+			$(".random-search").css("display","none");
+			$(".select-buttons").css("display","table");
+			$(".option-label").css("opacity","1");
+			$(".random-search").css("opacity","1");
+		});
+	});
+	$(".specific-back-button").click(function(){
+		$(".specific-search").animate({opacity:'0'}, 200, function() {
+			$(".specific-search").css("display","none");
+			$(".select-buttons").css("display","table");
+			$(".specific-search").css("opacity","1");
+		});
 	});
 });

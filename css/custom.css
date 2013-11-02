@@ -78,12 +78,32 @@ body
 	margin:0;
 	padding:5%;
 }
+.select-header
+{
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
 .widget-container
 {
 	height:100%;
 	width:100%;
 	margin:0;
-	padding:10% 5%;
+	padding:8% 5%;
+}
+.random-search-back
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding: 30% 80% 1% 1%;
+}
+.specific-search-back
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
 }
 .option-button
 {
