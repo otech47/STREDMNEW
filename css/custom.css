@@ -45,20 +45,43 @@ body
 	height:100%;
 	width:60%;
 	margin:auto;
+	padding:5%;
+}
+.app-background
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color: rgba(255, 255, 255, 0.85);
 }
 .select-buttons
 {
 	height:100%;
 	width:100%;
 	margin:0;
+	padding:0;
+}
+.combined-search
+{
+	display:none;
+	height:100%;
+	width:100%;
+	margin:0;
 	padding:5%;
+}
+.widget-container
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:15% 5%;
 }
 .option-button
 {
 	height:50%;
 	margin:0;
 	padding:1%;
-	background-color: rgba(255, 255, 255, 0.85);
 }
 .option-label
 {
