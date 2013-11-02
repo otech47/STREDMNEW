@@ -62,7 +62,15 @@ body
 	margin:0;
 	padding:0;
 }
-.combined-search
+.random-search
+{
+	display:none;
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:5%;
+}
+.specific-search
 {
 	display:none;
 	height:100%;
@@ -75,7 +83,7 @@ body
 	height:100%;
 	width:100%;
 	margin:0;
-	padding:15% 5%;
+	padding:10% 5%;
 }
 .option-button
 {

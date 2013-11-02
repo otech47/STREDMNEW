@@ -86,7 +86,14 @@ $(document).ready( function() {
 		$(".option-button").css("box-shadow","0 0 0 0");
 		$(".option-label").animate({opacity:'0'}, 200, function() {
 			$(".select-buttons").css("display","none");
-			$(".combined-search").css("display","table");
+			$(".random-search").css("display","table");
+			});
+	});
+	$(".specific-button").click(function(){
+		$(".option-button").css("box-shadow","0 0 0 0");
+		$(".option-label").animate({opacity:'0'}, 200, function() {
+			$(".select-buttons").css("display","none");
+			$(".specific-search").css("display","table");
 			});
 	});
 });
