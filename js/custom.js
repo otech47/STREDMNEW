@@ -92,11 +92,19 @@ $(document).ready( function() {
 		{
 		$(this).css("box-shadow","0 0 0 0")
 	});
+	$(".back-button").hover(function(){
+		$(this).css('cursor','default');
+		$(this).css("box-shadow","0 0 2px 5px grey")
+		},
+		function ()
+		{
+		$(this).css("box-shadow","0 0 0 0")
+	});
 	$(".random-button").click(function(){
 		$(".option-button").css("box-shadow","0 0 0 0");
 		$(".option-label").animate({opacity:'0'}, 200, function() {
 			$(".select-buttons").css("display","none");
-			$(".random-search").css("display","table");
+			$(".random-search").css("display","block");
 			$(".option-label").css("opacity","1");
 			});
 	});
@@ -104,23 +112,44 @@ $(document).ready( function() {
 		$(".option-button").css("box-shadow","0 0 0 0");
 		$(".option-label").animate({opacity:'0'}, 200, function() {
 			$(".select-buttons").css("display","none");
-			$(".specific-search").css("display","table");
+			$(".specific-search").css("display","block");
 			$(".option-label").css("opacity","1");
 			});
 	});
 	$(".random-back-button").click(function(){
 		$(".random-search").animate({opacity:'0'}, 200, function() {
 			$(".random-search").css("display","none");
-			$(".select-buttons").css("display","table");
-			$(".option-label").css("opacity","1");
+			$(".select-buttons").css("display","block");
 			$(".random-search").css("opacity","1");
 		});
 	});
 	$(".specific-back-button").click(function(){
 		$(".specific-search").animate({opacity:'0'}, 200, function() {
 			$(".specific-search").css("display","none");
-			$(".select-buttons").css("display","table");
+			$(".select-buttons").css("display","block");
 			$(".specific-search").css("opacity","1");
+		});
+	});
+	$("button.stredm-panel-button").click(function(){
+		var eventSelection = $("input[id='events']").val();
+		var artistSelection = $("input[id='artists']").val();
+		var postdata = {
+			event:eventSelection,
+			artist:artistSelection
+			};
+		$(".stredming-wrapper").css("display","block");
+		$('.scroll-wrapper').animate({scrollTop: $(document).height()}, 'slow');
+		$("div.stredming").slideDown(100);
+		$("div.stredming-results").empty();
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/request.php',
+			data: postdata,
+			success: function(data) 
+			{
+				var result = data;
+				jQuery("div.stredming-results").append("<div class='result'>"+result+"</div>");
+			}
 		});
 	});
 });
