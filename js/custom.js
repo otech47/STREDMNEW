@@ -139,8 +139,8 @@ $(document).ready( function() {
 			};
 		$(".stredming-wrapper").css("display","block");
 		$('.scroll-wrapper').animate({scrollTop: $(document).height()}, 'slow');
-		$("div.stredming").slideDown(100);
-		$("div.stredming-results").empty();
+		$(".stredming-player-container").slideDown(100);
+		$(".stredming-result").empty();
 		jQuery.ajax({
 			type: "POST",
 			url: '../scripts/request.php',
@@ -148,7 +148,7 @@ $(document).ready( function() {
 			success: function(data) 
 			{
 				var result = data;
-				jQuery("div.stredming-results").append("<div class='result'>"+result+"</div>");
+				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
 			}
 		});
 	});

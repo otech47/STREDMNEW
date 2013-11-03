@@ -1,6 +1,7 @@
 html
 {
 	height:100%;
+	width:100%;
 }
 
 body
@@ -10,6 +11,7 @@ body
 	background-size:100% 108.5%;
 	background-repeat:no-repeat;
 	height:100%;
+	width:100%;
 	padding-top: 50px;
 }
 .scroll-wrapper
@@ -138,17 +140,27 @@ body
 .stredming-wrapper
 {
 	height:100%;
+	width:100%;
 	padding:3%;
 	display:none;
 }
 .stredming-container
 {
 	height:100%;
+	width:100%;
 	background-color: rgba(255, 255, 255, 0.85);
 }
-.stredming-header
+.stredming-player-container
 {
-	height:15%;
+	height:25%;
+	width:100%;
+	padding:1%;
+}
+.stredming-result
+{
+	height:100%;
+	width:100%;
+	box-shadow: 0 0 2px 5px black;
 }
 .logo 
 {
