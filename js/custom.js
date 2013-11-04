@@ -156,7 +156,7 @@ $(document).ready( function() {
       accessToken : 447746666.e63702a.44f2b6783ac044b49fb197a61b1f915e,
       show        : 'liked',
       count       : 1,
-      pager       : true
+      pager       : true,
     });
 
 	});
