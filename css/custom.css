@@ -290,6 +290,27 @@ body
 	text-align:center;
 	padding:0;
 }
+.btn-sample {
+color: #FFFFFF;
+padding: 10px 12px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #357EBD;
+background-image: -moz-linear-gradient(top, #428BCA, #357EBD);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#428BCA), to(#357EBD));
+background-image: -webkit-linear-gradient(top, #428BCA, #357EBD);
+background-image: -o-linear-gradient(top, #428BCA, #357EBD);
+background-image: linear-gradient(to bottom, #428BCA, #357EBD);
+background-repeat: repeat-x;
+border-color: #357EBD;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: "Avantgarde", sans-serif;
+letter-spacing: 1px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#428BCA', endColorstr='#357EBD', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
 @font-face 
 {
 	font-family:'rage';
