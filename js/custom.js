@@ -39,36 +39,23 @@ $(document).ready( function() {
 	}
 	function getAllTags()
 	{
-		var autocompleteData = new Array();
 		var eventSelection = "";
 		var artistSelection = "";
-		var postdata = { event:eventSelection };
+		var postdata = {event:eventSelection};
 		jQuery.ajax({
 			type: "POST",
-			url: '../scripts/artistTags.php',
+			url: '../scripts/allTags.php',
 			data: postdata,
 			success: function(data) 
 			{
-				var autocompleteDataTemp = JSON.parse(data);
-				autocompleteData = autocompleteData.concat(autocompleteDataTemp);
-			}
-		});
-		postdata = { artist:artistSelection };
-		jQuery.ajax({
-			type: "POST",
-			url: '../scripts/eventTags.php',
-			data: postdata,
-			success: function(data) 
-			{
-				var autocompleteDataTemp = JSON.parse(data);
-				autocompleteData = autocompleteData.concat(autocompleteDataTemp);
-			}
-		});
-		$("input[id='select-combined']").autocomplete({
+				var autocompleteData = JSON.parse(data);
+				$("input[id='select-combined']").autocomplete({
 					source: autocompleteData
 				});
-		$("#select-combined").select();
-		$("#select-combined").autocomplete("search", "");
+				$("#select-combined").select();
+				$("#select-combined").autocomplete("search", "");
+			}
+		});
 	}
 	$("#select-combined").autocomplete({
 		minLength: 0
@@ -130,7 +117,7 @@ $(document).ready( function() {
 			$(".specific-search").css("opacity","1");
 		});
 	});
-	$("button.stredm-panel-button").click(function(){
+	$("button.specific-stredm").click(function(){
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
 		var postdata = {
@@ -151,6 +138,25 @@ $(document).ready( function() {
 				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
 			}
 		});
-
+	});
+	$("button.random-stredm").click(function(){
+		var selection = $("input[id='select-combined']").val();
+		var postdata = {
+			select:selection
+			};
+		$(".stredming-wrapper").css("display","block");
+		$('.scroll-wrapper').animate({scrollTop: $(document).height()}, '1000');
+		$(".stredming-player-container").slideDown(100);
+		$(".stredming-result").empty();
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/requestRandom.php',
+			data: postdata,
+			success: function(data) 
+			{
+				var result = data;
+				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
+			}
+		});
 	});
 });
