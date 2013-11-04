@@ -12,7 +12,7 @@ body
 	background-repeat:no-repeat;
 	height:100%;
 	width:100%;
-	padding-top: 50px;
+	padding-top: 66px;
 }
 h1
 {
@@ -50,17 +50,20 @@ h1
 .app-container
 {
 	height:100%;
-	width:60%;
+	width:55%;
 	margin:auto;
-	padding:5%;
+	padding:6%;
 }
 .app-background
 {
-	height:100%;
-	width:100%;
-	margin:0;
-	padding:0;
-	background-color: rgba(255, 255, 255, 0.85);
+	height: 80%;
+	width: 86%;
+	margin-top: 5%;
+	margin: auto;
+	padding: 0;
+	box-shadow: 0px 0px 9px 1px #428bca;
+	border-radius: 40px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 .select-buttons
 {
@@ -103,14 +106,14 @@ h1
 	height:11%;
 	width:100%;
 	margin:0;
-	padding: 3% 97% 0% 0%;
+	padding: 0% 90% 0% 0%;
 }
 .specific-search-back
 {
 	height:13%;
 	width:100%;
 	margin:0;
-	padding: 4.5% 97% 0 0;
+	padding: 0% 90% 0 0;
 }
 .specific-back-button
 {
@@ -144,10 +147,13 @@ h1
 }
 .stredming-wrapper
 {
-	height:100%;
-	width:100%;
-	padding:3%;
-	display:none;
+	height: 100%;
+	width: 100%;
+	padding: 0% 10%;
+	display: none;
+	background-size: 100% 103%;
+	background-repeat: no-repeat;
+	background-image: url(../images/newrukes.jpg);
 }
 .stredming-container
 {
@@ -157,6 +163,7 @@ h1
 }
 .stredming-top
 {
+<<<<<<< HEAD
 	margin:0;
 	padding:0;
 	height:25%;
@@ -165,6 +172,11 @@ h1
 {
 	height:100%;
 	padding:1%;
+=======
+	height: 33%;
+	width: 100%;
+	padding: 3% 2% 0% 2%;
+>>>>>>> 04d7699d434497aae6a91389f9736ab27f34568c
 }
 .stredming-artist
 {
@@ -183,7 +195,7 @@ h1
 {
 	height:100%;
 	width:100%;
-	box-shadow: 0 0 2px 5px black;
+	box-shadow: 0 0 5px 3px black;
 }
 .stredming-tracklist
 {
@@ -305,6 +317,27 @@ h1
 {
 	text-align:center;
 	padding:0;
+}
+.btn-sample {
+color: #FFFFFF;
+padding: 10px 12px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #357EBD;
+background-image: -moz-linear-gradient(top, #428BCA, #357EBD);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#428BCA), to(#357EBD));
+background-image: -webkit-linear-gradient(top, #428BCA, #357EBD);
+background-image: -o-linear-gradient(top, #428BCA, #357EBD);
+background-image: linear-gradient(to bottom, #428BCA, #357EBD);
+background-repeat: repeat-x;
+border-color: #357EBD;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: "Avantgarde", sans-serif;
+letter-spacing: 1px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#428BCA', endColorstr='#357EBD', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 @font-face 
 {

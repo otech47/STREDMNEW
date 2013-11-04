@@ -138,7 +138,7 @@ $(document).ready( function() {
 			artist:artistSelection
 			};
 		$(".stredming-wrapper").css("display","block");
-		$('.scroll-wrapper').animate({scrollTop: $(document).height()}, 'slow');
+		$('.scroll-wrapper').animate({scrollTop: $(document).height()}, '1000');
 		$(".stredming-player-container").slideDown(100);
 		$(".stredming-result").empty();
 		jQuery.ajax({
@@ -151,5 +151,6 @@ $(document).ready( function() {
 				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
 			}
 		});
+
 	});
 });
