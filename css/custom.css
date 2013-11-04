@@ -165,17 +165,17 @@ h1
 {
 	margin:0;
 	padding:1%;
-	height:39%;
-}
-.stredming-player-container
-{
-	padding:1%;
-	height:100%;
+	height:36%;
 }
 .stredming-bottom
 {
 	margin: 0;
 	padding: 1%;
+}
+.stredming-player-container
+{
+	height: 90%;
+	padding-left: 0%;
 }
 .stredming-result
 {
@@ -185,17 +185,11 @@ h1
 }
 .stredming-tracklist
 {
-	border: 2px solid #000000;
-    height: 100%;
-    margin: 0;
-    overflow-y: scroll;
-    padding: 1%;
-}
-.stredming-bottom
-{
-	height:61%;
-	margin:0;
 	border: 1px solid #000000;
+	height: 90%;
+	margin: 0;
+	overflow-y: scroll;
+	padding: 1%;
 }
 .logo 
 {
