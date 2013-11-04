@@ -14,6 +14,11 @@ body
 	width:100%;
 	padding-top: 50px;
 }
+h1
+{
+	margin:0;
+	padding:0;
+}
 .scroll-wrapper
 {
 	height:100%;
@@ -150,17 +155,40 @@ body
 	width:100%;
 	background-color: rgba(255, 255, 255, 0.85);
 }
+.stredming-top
+{
+	margin:0;
+	padding:0;
+	height:25%;
+}
+.stredming-info
+{
+	height:100%;
+	padding:1%;
+}
+.stredming-artist
+{
+	height:50%;
+}
+.stredming-event
+{
+	height:50%;
+}
 .stredming-player-container
 {
-	height:25%;
-	width:100%;
 	padding:1%;
+	height:100%;
 }
 .stredming-result
 {
 	height:100%;
 	width:100%;
 	box-shadow: 0 0 2px 5px black;
+}
+.stredming-tracklist
+{
+	height:100%;
+	padding:1%;
 }
 .logo 
 {
@@ -208,15 +236,9 @@ body
 	font-size: 175%;
 	font-weight: 500;
 }
-.stredming-results
-{
-	height:87%;
-	margin:0;
-	padding:0;
-}
 .result
 {
-	height: 72%;
+	height: 100%;
 	padding: 0%;
 }
 .stredm-logo
@@ -297,7 +319,6 @@ body
 }
 .ui-autocomplete {
 	max-height: 200px;
-	max-width: 157px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
