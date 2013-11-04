@@ -142,10 +142,13 @@ body
 }
 .stredming-wrapper
 {
-	height:100%;
-	width:100%;
-	padding:0% 10%;
-	display:none;
+	height: 100%;
+	width: 100%;
+	padding: 0% 10%;
+	display: none;
+	background-size: 100% 103%;
+	background-repeat: no-repeat;
+	background-image: url(../images/newrukes.jpg);
 }
 .stredming-container
 {
@@ -155,15 +158,15 @@ body
 }
 .stredming-player-container
 {
-	height:25%;
-	width:100%;
-	padding:1%;
+	height: 33%;
+	width: 100%;
+	padding: 3% 2% 0% 2%;
 }
 .stredming-result
 {
 	height:100%;
 	width:100%;
-	box-shadow: 0 0 2px 5px black;
+	box-shadow: 0 0 5px 3px black;
 }
 .logo 
 {
@@ -219,7 +222,7 @@ body
 }
 .result
 {
-	height: 72%;
+	height: 100%;
 	padding: 0%;
 }
 .stredm-logo
