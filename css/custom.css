@@ -45,16 +45,20 @@ body
 .app-container
 {
 	height:100%;
-	width:60%;
+	width:55%;
 	margin:auto;
-	padding:5%;
+	padding:6%;
 }
 .app-background
 {
-	height:100%;
-	width:100%;
-	margin:0;
-	padding:0;
+	height: 90%;
+	width: 90%;
+	margin-top: 5%;
+	margin: auto;
+	margin-top: 3%;
+	padding: 0;
+	box-shadow: 0px 0px 9px 1px #428bca;
+	border-radius: 40px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 .select-buttons
