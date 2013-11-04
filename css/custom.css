@@ -164,14 +164,13 @@ h1
 .stredming-top
 {
 	margin:0;
-	padding:0;
-	height:25%;
+	padding:1%;
+	height:36%;
 }
 .stredming-player-container
 {
-	padding:1%;
-	height:100%;
-	padding: 3% 2% 0% 2%;
+	height: 90%;
+	padding-left: 0%;
 }
 .stredming-result
 {
@@ -181,8 +180,11 @@ h1
 }
 .stredming-tracklist
 {
-	height:100%;
-	padding:1%;
+	border: 1px solid #000000;
+	height: 90%;
+	margin: 0;
+	overflow-y: scroll;
+	padding: 1%;
 }
 .logo 
 {
