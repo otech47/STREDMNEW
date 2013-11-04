@@ -13,11 +13,14 @@ body
 	height:100%;
 	width:100%;
 	padding-top: 66px;
+<<<<<<< HEAD
 }
 h1
 {
 	margin:0;
 	padding:0;
+=======
+>>>>>>> 04d7699d434497aae6a91389f9736ab27f34568c
 }
 .scroll-wrapper
 {
@@ -164,6 +167,7 @@ h1
 .stredming-top
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	margin:0;
 	padding:0;
 	height:25%;
@@ -190,17 +194,25 @@ h1
 {
 	padding:1%;
 	height:100%;
+=======
+	height: 33%;
+	width: 100%;
+	padding: 3% 2% 0% 2%;
+>>>>>>> 04d7699d434497aae6a91389f9736ab27f34568c
 }
 .stredming-result
 {
 	height:100%;
 	width:100%;
 	box-shadow: 0 0 5px 3px black;
+<<<<<<< HEAD
 }
 .stredming-tracklist
 {
 	height:100%;
 	padding:1%;
+=======
+>>>>>>> 04d7699d434497aae6a91389f9736ab27f34568c
 }
 .logo 
 {
