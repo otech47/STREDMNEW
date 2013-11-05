@@ -303,6 +303,20 @@ h1
 	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
 	  -webkit-font-smoothing: antialiased;
 }
+.btn-tickets:hover 
+{
+	background-color: hsl(281, 100%, 27%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cc60ff", endColorstr="#5e0089");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#cc60ff), to(#5e0089));
+  background-image: -moz-linear-gradient(top, #cc60ff, #5e0089);
+  background-image: -ms-linear-gradient(top, #cc60ff, #5e0089);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc60ff), color-stop(100%, #5e0089));
+  background-image: -webkit-linear-gradient(top, #cc60ff, #5e0089);
+  background-image: -o-linear-gradient(top, #cc60ff, #5e0089);
+  background-image: linear-gradient(#cc60ff, #5e0089);
+  border-color: #5e0089 #5e0089 hsl(281, 100%, 16.5%);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.69);
+}
 .instagram-container
 {
 	height:100%;
