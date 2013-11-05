@@ -108,12 +108,26 @@ h1
 	margin:0;
 	padding: 0% 90% 0% 0%;
 }
+.random-stredm
+{
+	margin:20% 0 0 0;
+}
+.random-back-button
+{
+	height:87%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
 .specific-search-back
 {
 	height:13%;
 	width:100%;
 	margin:0;
 	padding: 0% 90% 0 0;
+}
+.specific-stredm
+{
 }
 .specific-back-button
 {
@@ -132,12 +146,14 @@ h1
 {
 	margin:0;
 	padding:1%;
+	height:100%;
 }
 .label-header
 {
 	height:100%;
 	margin:0;
 	padding:10% 0%;
+	width:100%;
 }
 .label-icon
 {
@@ -176,7 +192,7 @@ h1
 .stredming-player-container
 {
 	height: 90%;
-	padding-left: 0%;
+	padding: 0%;
 }
 .stredming-result
 {
@@ -304,13 +320,6 @@ h1
 	height: 98%;
 	right: 1%;
 }
-
-.stredm-panel
-{
-	background-color: rgba(0,0,0,.9);
-	height: 100%;
-	border-radius: 11px;
-}
 .stredm-select-container
 {
 	height: 100%;
@@ -352,7 +361,9 @@ h1
 .random-button-container
 {
 	text-align:center;
-	padding:32% 0 0 0;
+	padding:0;
+	margin:0;
+	height:65%;
 }
 .specific-button-container
 {
@@ -401,58 +412,42 @@ input[type=text]
 	
 }
 
+
 @media only screen and (max-width: 768px) 
 {
 
-.content-wrapper
+.app-container
 {
-	background-position: -198% 65%;
-	background-size: 170% 80%;
-}
-.stredm-panel-container
-{
-	right:0%;
-	padding: 1% 1% 0;
-	font-size: 51.5%;
-}
-.top-menu
-{
-	font-size: 170%;
-	margin: 0;
+	width:85%;
+	padding:6% 0;
 }
 .stredming-container
 {
-	display:none;
-	height:33%;
+	height:auto;
 }
-.stredm-logo
+.stredming-top
 {
-	display:none;
+	height:auto;
 }
-.stredming
+.stredming-bottom
 {
-	margin-right:0;
-	height:100%;
+	height:auto;
+	margin:3%;
 }
-.stredming-results
+.stredming-tracklist
 {
-	height:80%;
-}
-.result
-{
-	height:100%;
-}
-.links-menu 
-{
-	margin: 0;
+	height:130px;
+	width:97%;
 }
 
 }
 
 @media only screen and (max-width: 1200px) 
 {
-.stredm-panel-container
+
+.stredming-wrapper
 {
-	font-size: 74%;
+	padding: 0 5%;
 }
+
 }
