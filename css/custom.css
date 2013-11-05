@@ -225,6 +225,10 @@ h1
 	height:100%;
 	padding: 1%;
 }
+.promotion 
+{
+	box-shadow: 0px 0px 6px 2px black;
+}
 .concert-title 
 {
 	margin:0%;
@@ -233,8 +237,40 @@ h1
 {
 	font-size: 20px;
 	color:black;
+	margin: 0% 0% 0% 2%;
 }
 .concert-link:hover 
+{
+	color:#AA00FF;
+	text-decoration: none;
+}
+.picture 
+{
+	padding: 0% 2% 0% 2%;
+}
+.edco
+{
+	height: inherit;
+	width: 100%;
+	box-shadow: 0px 0px 2px 2px black;
+	margin: 0%;
+}
+.text-container
+{
+	padding: 2% 2% 0% 2%;
+}
+.event-description
+{
+	font-weight: 600;
+	color: black;
+	font-size:17px;
+}
+.tag-link
+{
+	font-size: 17px;
+	color:black;
+}
+.tag-link:hover 
 {
 	color:#AA00FF;
 	text-decoration: none;
