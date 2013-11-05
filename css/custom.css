@@ -249,6 +249,16 @@ h1
 	color: black
 	font-size:17px;
 }
+.tag-link
+{
+	font-size: 17px;
+	color:black;
+}
+.tag-link:hover 
+{
+	color:#AA00FF;
+	text-decoration: none;
+}
 .instagram-container
 {
 	height:100%;
