@@ -12,7 +12,6 @@ body
 	background-repeat:no-repeat;
 	height:100%;
 	width:100%;
-	padding-top: 66px;
 }
 h1
 {
@@ -295,18 +294,37 @@ h1
 	border-radius: 0px;
 	padding-top: 0%;
 }
+.header-menu
+{
+	position:fixed;
+	height:15%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.header-left
+{
+	height:100%;
+	padding:0;
+}
+.header-right
+{
+	height:100%;
+	padding:0;
+}
+.logo-container
+{
+	padding:0;
+}
+.logo-text-container
+{
+	padding:0;
+}
 .logo 
 {
 	width: 200px;
 }
-.header-logo
-{
-	vertical-align: middle;
-	width: 41%;
-	padding: 0% 0% 0% 0%;
-	margin: 0% 0% 0% 57%;
-}
-.brand
+.logo-text
 {
 	float: left;
 	padding: 17% 0% 0% 0%;
@@ -315,10 +333,16 @@ h1
 	font-weight: 500;
 	font-family: rage;
 }
-
-.links-menu
+.header-logo
 {
-	margin: 3% 0% 0% 15%;
+	vertical-align: middle;
+	width: 41%;
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 57%;
+}
+.header-icon
+{
+	padding:0;
 }
 .stredming
 {
