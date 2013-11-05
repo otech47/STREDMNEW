@@ -204,6 +204,25 @@ h1
 	margin: 0% 1%;
 	box-shadow: 0px 0px 6px 2px black;
 }
+.promotion-container 
+{
+	height:100%;
+	padding: 1%;
+}
+.concert-title 
+{
+	margin:0%;
+}
+.concert-link
+{
+	font-size: 20px;
+	color:black;
+}
+.concert-link:hover 
+{
+	color:#AA00FF;
+	text-decoration: none;
+}
 .instagram-container
 {
 	height:100%;
