@@ -171,6 +171,7 @@ h1
 {
 	margin: 0;
 	padding: 1%;
+	height:64%;
 }
 .stredming-player-container
 {
@@ -190,6 +191,14 @@ h1
 	margin: 0;
 	overflow-y: scroll;
 	padding: 1%;
+}
+.instagram-container
+{
+	height:100%;
+}
+.instagram
+{
+	height:100%;
 }
 .logo 
 {
