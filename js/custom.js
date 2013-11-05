@@ -118,6 +118,7 @@ $(document).ready( function() {
 		});
 	});
 	$("button.specific-stredm").click(function(){
+		var url = "";
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
 		var postdata = {
@@ -136,6 +137,7 @@ $(document).ready( function() {
 			{
 				var result = data;
 				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
+				url = "";
 			}
 		});
 	});
