@@ -164,15 +164,14 @@ h1
 .stredming-top
 {
 	margin:0;
-	padding:1%;
-	height:36%;
-	border-bottom: 2px solid #3399CC;
+	padding: 3% 2% 0% 2%;
+	height: 36%;
 }
 .stredming-bottom
 {
 	margin: 0;
-	padding: 1%;
-	height:64%;
+	padding: 0% 1% 0% 1%;
+	height: 64%;
 }
 .stredming-player-container
 {
@@ -197,6 +196,17 @@ h1
 {
 	padding:1%;
 	height:100%;
+}
+.twitter-timeline
+{
+	border: none;
+	max-width: 48%;
+	min-width: 180px;
+	height: 100%;
+	height: 347px;
+	margin: 0% 20%;
+	box-shadow: 0px 0px 7px 1px black;
+	border-radius: 8px;
 }
 .instagram-container
 {
