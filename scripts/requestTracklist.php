@@ -17,9 +17,9 @@ while($row = mysqli_fetch_array($result))
 	$resultArray[$i] = $row[0];
 	$i++;
 }
-if(!empty($resultArray))
+if(strlen($resultArray[0])>5)
 {
-	$returnResult = "<iframe id='current-result' width='100%' height='100%' scrolling='no' frameborder='no' src=".stripslashes($resultArray[0])."&amp;auto_play=true&amp;show_user=false"."></iframe>";
+	$returnResult = nl2br($resultArray[0]);
 	echo $returnResult;
 }
 else

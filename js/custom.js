@@ -136,19 +136,20 @@ $(document).ready( function() {
 			{
 				var result = data;
 				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
-			}
-		});
-		var urlSelection = $("#current-result").attr("src");
-		$(".stredming-tracklist").empty();
-		postdata = {url:urlSelection}
-		jQuery.ajax({
-			type: "POST",
-			url: '../scripts/requestTracklist.php',
-			data: postdata,
-			success: function(data) 
-			{
-				var result = data;
-				jQuery("div.stredming-tracklist").append("<div class='tracklist-result'>"+result+"</div>");
+				var urlSrc = $("#current-result").attr("src");
+				var urlSelection = urlSrc.substring(0, urlSrc.length-31);
+				$(".stredming-tracklist").empty();
+				var urlpostdata = {url:urlSelection}
+				jQuery.ajax({
+					type: "POST",
+					url: '../scripts/requestTracklist.php',
+					data: urlpostdata,
+					success: function(data) 
+					{
+						var result = data;
+						jQuery("div.stredming-tracklist").append("<div class='tracklist-result'>"+result+"</div>");
+					}
+				});
 			}
 		});
 	});
