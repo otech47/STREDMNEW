@@ -118,7 +118,6 @@ $(document).ready( function() {
 		});
 	});
 	$("button.specific-stredm").click(function(){
-		var url = "";
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
 		var postdata = {
@@ -137,7 +136,19 @@ $(document).ready( function() {
 			{
 				var result = data;
 				jQuery("div.stredming-result").append("<div class='result'>"+result+"</div>");
-				url = "";
+			}
+		});
+		var urlSelection = $("#current-result").attr("src");
+		$(".stredming-tracklist").empty();
+		postdata = {url:urlSelection}
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/requestTracklist.php',
+			data: postdata,
+			success: function(data) 
+			{
+				var result = data;
+				jQuery("div.stredming-tracklist").append("<div class='tracklist-result'>"+result+"</div>");
 			}
 		});
 	});

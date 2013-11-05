@@ -36,7 +36,16 @@ if(!empty($resultArray))
 }
 else
 {
-	$returnResult = "<p>No results found";
+	$sql = "SELECT url FROM sets";
+	$result = mysqli_query($con, $sql);
+	$i = 0;
+	while($row = mysqli_fetch_array($result))
+	{
+		$fullArray[$i] = $row[0];
+		$i++;
+	}
+	$j = rand(0, count($fullArray)-1);
+	$returnResult = "<iframe id='current-result' width='100%' height='100%' scrolling='no' frameborder='no' src=".stripslashes($fullArray[$j])."&amp;auto_play=true&amp;show_user=false"."></iframe>";
 	echo $returnResult;
 }
 
