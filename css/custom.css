@@ -161,7 +161,7 @@ h1
 }
 .stredming-wrapper
 {
-	height: auto;
+	height: 110%;
 	width: 100%;
 	padding: 0% 10%;
 	display: none;
@@ -558,6 +558,15 @@ input[type=text]
 {
 	font-size:5em;
 }
+.stredming-wrapper
+{
+	height:310%;
+}
+.label-header
+{
+	padding:20% 0;
+}
+
 
 }
 
@@ -567,6 +576,15 @@ input[type=text]
 .stredming-wrapper
 {
 	padding: 0 5%;
+	height:140%;
+}
+.widget-container
+{
+	padding:2% 5%;
+}
+.select-header
+{
+	font-size:120%;
 }
 
 }
