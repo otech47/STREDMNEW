@@ -187,7 +187,16 @@ $(document).ready( function() {
 			}
 		});
 	});
+	$("div.stredming-tracklist").click(function(){
+		var scwidget = SC.Widget(iframeElement);
+		$("div.random-search").empty();
+		$("div.random-search").append("<div class='tracklist-result'>"+scwidget.getPosition()+"</div>");
+	});
 	$(".pull-down").each(function() {
 		$(this).css('margin-top', $(this).parent().height()-$(this).height())
+	});
+	$("#current-result").ready( function() {
+		var scwidget = SC.Widget('current-result');
+		scwidget.play();
 	});
 });
