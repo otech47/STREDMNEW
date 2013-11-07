@@ -265,7 +265,7 @@ h1
 	margin: 0%;
 	font-size: 17px;
 	letter-spacing: 0px;
-	line-height: 22px;
+	line-height: 27px;
 }
 .tag-link
 {
@@ -279,11 +279,11 @@ h1
 .button-container 
 {
 	padding: 3%;
-	margin-top: 0%;
+	margin-top: 1%;
 }
 .btn-tickets
 {
-		width: 100%
+		width: 100%;
 		font-size:14px;
 	  background-color: hsl(0, 0%, 1%) !important;
 	  background-repeat: repeat-x;
