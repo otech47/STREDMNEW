@@ -301,6 +301,10 @@ margin: 1% 0% 2% 12%;
 	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
 	  -webkit-font-smoothing: antialiased;
 }
+.tickets 
+{
+	color: white;
+}
 .btn-tickets:hover 
 {
 	background-color: hsl(281, 100%, 27%) !important;
