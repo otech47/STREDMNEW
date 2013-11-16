@@ -12,6 +12,7 @@ body
 	background-repeat:no-repeat;
 	height:100%;
 	width:100%;
+	overflow-y:hidden;
 }
 h1
 {
@@ -20,15 +21,15 @@ h1
 }
 .scroll-wrapper
 {
-	height:100%;
+	height:85%;
 	width:100%;
 	overflow-y:scroll;
 }
 .page-wrapper
 {
-	height:77%;
+	height:100%;
 	width:100%;
-	margin:7em 0 0 0;
+	margin:0;
 	padding:0;
 }
 .navbar 
@@ -41,7 +42,7 @@ h1
 }
 .page-container
 {
-	height:110%;
+	height:100%;
 	width:100%;
 	margin:0;
 	text-align:center;
@@ -161,7 +162,7 @@ h1
 }
 .stredming-wrapper
 {
-	height: 120%;
+	height: 100%;
 	width: 100%;
 	padding: 0% 10%;
 	display: none;
@@ -174,6 +175,7 @@ h1
 	height:100%;
 	width:100%;
 	background-color: rgba(255, 255, 255, 0.85);
+	padding-bottom:4%;
 }
 .stredming-top
 {
@@ -184,7 +186,7 @@ h1
 .stredming-bottom
 {
 	margin: 0;
-	padding: 0% 1% 2% 1%;
+	padding: 0% 1% 0 1%;
 	height: 64%;
 }
 .stredming-player-container
@@ -208,27 +210,48 @@ h1
 }
 .twitter-container
 {
-	padding:1%;
+	padding:1% 1% 0;
 	height:100%;
+}
+.twitter
+{
+	height:100%;
+	width:100%;
 }
 .twitter-timeline
 {
-	width: 95%;
-	height: 330px;
-	margin: 0% 1%;
+	width: 100%;
+	height: 310px;
+	margin: 0%;
 	box-shadow: 0px 0px 6px 2px black;
 }
 .promotion-container 
 {
 	height: 100%;
 	padding: 1% 1% 0% 1%;
-	margin-left: -1%;
+	margin:0;
 }
 .promotion 
 {
-	height: 92.5%;
+	height: 100%;
 	box-shadow: 0px 0px 6px 2px black;
 	background-color: white;
+}
+.promotion-header
+{
+	height:10%;
+}
+.picture-container
+{
+	height:40%;
+}
+.description-container
+{
+	height:40%;
+}
+.ticket-container
+{
+	height:10%;
 }
 .concert-title 
 {
@@ -251,37 +274,37 @@ h1
 }
 .event-pic
 {
-height: 100px;
-width: 74%;
-box-shadow: 0px 0px 2px 3px black;
-margin: 1% 0% 2% 12%;
+	height: 100px;
+	width: 74%;
+	box-shadow: 0px 0px 2px 3px black;
+	margin: 1% 0% 2% 12%;
 }
 .text-container
 {
-	padding: 1% 2% 0% 2%;
+	padding: 1% 2% 0%;
+	height:100%;
 }
 .event-description
 {
 	font-weight: 600;
 	color: black;
 	margin: 0%;
-	font-size: 17px;
+	font-size: 15px;
 	letter-spacing: 0px;
 	line-height: 27px;
 }
 .tag-link
 {
-	font-size: 17px;
 	color:black;
 }
 .tag-link:hover 
 {	color:#AA00FF;
 	text-decoration: none;
 }
-.button-container 
+.ticket-button-container 
 {
-	padding: 3%;
-	margin-top: 1%;
+	padding: 1% 10%;
+	margin:0;
 }
 .btn-tickets
 {
@@ -323,11 +346,11 @@ margin: 1% 0% 2% 12%;
 .instagram-container
 {
 	height:100%;
-	padding:1%;
+	padding:1% 1% 0;
 }
 .instagram
 {
-	height: 95.5%;
+	height: 100%;
 	padding: 0%;
 	box-shadow: 0px 0px 6px 2px black;
 }
@@ -335,14 +358,13 @@ margin: 1% 0% 2% 12%;
 {
 	overflow: auto;
 	position: relative;
-	height: 330px;
+	height: 310px;
 	width: 100%;
 	border-radius: 0px;
 	padding-top: 0%;
 }
 .header-menu
 {
-	position:fixed;
 	height:15%;
 	width:100%;
 	margin:0;
@@ -530,6 +552,10 @@ input[type=text]
 @media only screen and (max-width: 768px) 
 {
 
+body
+{
+	overflow-y:hidden;
+}
 .app-container
 {
 	width:85%;
@@ -537,29 +563,35 @@ input[type=text]
 }
 .stredming-container
 {
-	height:auto;
 }
 .stredming-top
 {
-	height:auto;
 }
 .stredming-bottom
 {
-	height:auto;
-	margin:3%;
+	margin:42% 3% 3%;
 }
 .stredming-tracklist
 {
 	height:130px;
-	width:97%;
+	width:100%;
+}
+.header-menu
+{
+	height:12%;
 }
 .header-icon
 {
-	padding-top:3%;
+	padding-top:1%;
 }
 .page-wrapper
 {
-	margin: 11em 0 0;
+	margin: 0;
+}
+.scroll-wrapper
+{
+	height:90%;
+	overflow-x:hidden;
 }
 .logo-text
 {
@@ -572,6 +604,10 @@ input[type=text]
 .label-header
 {
 	padding:20% 0;
+}
+.header-right
+{
+	height:75%;
 }
 
 
