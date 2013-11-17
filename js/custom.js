@@ -119,6 +119,9 @@ $(document).ready( function() {
 	});
 	$("button.specific-stredm").click(function(){
 		mixpanel.track("Specific Stredm Click");
+		setTimeout(function() {
+			mixpanel.track("Specific Stredm for 5 Minutes");
+		}, 300000);
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
 		var postdata = {
@@ -156,6 +159,9 @@ $(document).ready( function() {
 	});
 	$("button.random-stredm").click(function(){
 		mixpanel.track("Random Stredm Click");
+		setTimeout(function() {
+			mixpanel.track("Random Stredm for 5 Minutes");
+		}, 300000);
 		var selection = $("input[id='select-combined']").val();
 		var postdata = {
 			select:selection
