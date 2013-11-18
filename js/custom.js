@@ -119,7 +119,7 @@ $(document).ready( function() {
 	});
 	$("button.specific-stredm").click(function(){
 		mixpanel.track("Specific Stredm Click");
-		setTimeout(function() {
+		var specificTimeout = setTimeout(function() {
 			mixpanel.track("Specific Stredm for 5 Minutes");
 		}, 300000);
 		var eventSelection = $("input[id='events']").val();
@@ -159,7 +159,7 @@ $(document).ready( function() {
 	});
 	$("button.random-stredm").click(function(){
 		mixpanel.track("Random Stredm Click");
-		setTimeout(function() {
+		var randomTimeout = setTimeout(function() {
 			mixpanel.track("Random Stredm for 5 Minutes");
 		}, 300000);
 		var selection = $("input[id='select-combined']").val();
@@ -196,15 +196,11 @@ $(document).ready( function() {
 		});
 	});
 	$("div.stredming-tracklist").click(function(){
-		var scwidget = SC.Widget(iframeElement);
-		$("div.random-search").empty();
-		$("div.random-search").append("<div class='tracklist-result'>"+scwidget.getPosition()+"</div>");
-	});
-	$(".pull-down").each(function() {
-		$(this).css('margin-top', $(this).parent().height()-$(this).height())
+		var player = SC.Widget(document.getElementById('current-result'));
+		player.pause();
 	});
 	$("#current-result").ready( function() {
-		var scwidget = SC.Widget('current-result');
-		scwidget.play();
+		var player = SC.Widget(document.getElementById('current-result'));
+		player.play();
 	});
 });
