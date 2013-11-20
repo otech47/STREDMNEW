@@ -347,13 +347,13 @@ h1
 {
 	height:100%;
 	padding:1% 1% 0;
-	background-color: white;
 }
 .instagram
 {
 	height: 100%;
 	padding: 0%;
-	box-shadow: 0px 0px 6px 2px black;
+	box-shadow: 0px 0px 6px 2px black;	
+	background-color: white;
 }
 .tintup 
 {
