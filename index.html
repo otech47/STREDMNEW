@@ -66,6 +66,14 @@ mixpanel.init("ea091fd1d0073af2c48de623590cd53b");</script><!-- end Mixpanel -->
 	</script>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="header-menu row">
 				<div class="header-left col-sm-8 row">
 			    	<div class="logo-container col-xs-4 text-right">
@@ -140,13 +148,13 @@ mixpanel.init("ea091fd1d0073af2c48de623590cd53b");</script><!-- end Mixpanel -->
 							<h1 class="select-header">Event</h1>
 							<div class="widget-container">
 								<div id="main-selector2" class="ui-widget">
-									<input type="text" id="events" name="events" value="EDC Orlando 2013"/>
+									<input type="text" id="events" name="events"/>
 								</div>
 							</div>
 							<h1 class="select-header">Artist</h1>
 							<div class="widget-container">
 								<div id="main-selector3" class="ui-widget">
-									<input type="text" id="artists" name="artists"/>
+									<input type="text" id="artists" name="artists" value="Mat Zo"/>
 								</div>
 							</div>
 							<div class="specific-button-container">
@@ -181,7 +189,10 @@ mixpanel.init("ea091fd1d0073af2c48de623590cd53b");</script><!-- end Mixpanel -->
 						</div>
 						<div class="instagram-container col-sm-4">
 							<div class="instagram">
-								<iframe src="http://snapwidget.com/p/widget/?id=5qC3btLhbG&amp;t=728" title="Instagram Widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow: hidden; width:330px; height:330px;padding-bottom: 4%;margin-left: 3.5%;"></iframe>
+								<div class="instagram-header">
+									<div class="fb-like" data-href="https://www.facebook.com/Stredm" data-width="225" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+								</div>
+								<iframe src="http://snapwidget.com/p/widget/?id=5qC3btLhbG&t=377" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:336px; height:259px; margin-left: 2%; margin-top: 18%;"></iframe>
 							</div>
 						</div>
 					</div>
