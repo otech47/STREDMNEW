@@ -7,7 +7,9 @@ $(document).ready( function() {
 		var temp2 = searchArray[1].split('=');
 		var event = temp1[1];
 		var artist = temp2[1];
-		alert("Event:"+event+"Artist:"+artist);
+		event = event.replace(/%20/g, " ");
+		artist = artist.replace(/%20/g, " ");
+		alert("Event: "+event+" Artist: "+artist);
 	}
 	function getEventTags()
 	{
