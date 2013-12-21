@@ -1,4 +1,14 @@
 $(document).ready( function() {
+	function searchSet()
+	{
+		var searchString = window.location.search.substring(1);
+		var searchArray = searchString.split('&');
+		var temp1 = searchArray[0].split('=');
+		var temp2 = searchArray[1].split('=');
+		var event = temp1[1];
+		var artist = temp2[1];
+		alert("Event:"+event+"Artist:"+artist);
+	}
 	function getEventTags()
 	{
 		var artistSelection = $("input[id='artists']").val();
@@ -56,6 +66,10 @@ $(document).ready( function() {
 				$("#select-combined").autocomplete("search", "");
 			}
 		});
+	}
+	if(window.location.search)
+	{
+		searchSet();
 	}
 	$("#select-combined").autocomplete({
 		minLength: 0
